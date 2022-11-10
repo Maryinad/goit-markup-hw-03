@@ -46,17 +46,10 @@ button {
   font-family: inherit;
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -71,8 +64,25 @@ h3 {
   color: var(--title-text-color);
 }
 
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 footer {
   background-color: var(--accent-background-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .container {
@@ -83,9 +93,6 @@ footer {
 }
 
 /*----------HEADER------------------*/
-header {
-  border-bottom: 1px solid #ececec;
-}
 
 .header-container {
   display: flex;
@@ -290,7 +297,7 @@ header {
 }
 /*----------------FOOTER---------------------*/
 
-.footer-container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -347,6 +354,9 @@ address {
   background: var(--accent-color);
   color: var(--button-text-color);
 }
+
+/* ------PORTFOLIO------------- */
+
 .portfolio-link {
   text-decoration: none;
 }
@@ -355,7 +365,7 @@ address {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .portfolio-text {
@@ -380,13 +390,13 @@ address {
   display: flex;
   justify-content: center;
   gap: 8px;
+  margin-bottom: 50px;
 }
 
 .portfolio {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-top: 50px;
 }
 
 .portfolio-definishion {
